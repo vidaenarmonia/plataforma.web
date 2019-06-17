@@ -35,12 +35,12 @@
 {%   include 'section-servicios.html' %}
 {% else %}
 {%   include 'header-common.html' %}
-    <div class="container">
+{% endif %}
+    <section class="section-contenidos" id="contenidos">
+        <div class="container">
 {% block content %}{% endblock %}
-    </div>
-{% endif %}
-{% if output_file == 'index.html' %}
-{% endif %}
+        </div>
+    </section>
 {% include 'footer.html' %}
 {% if USE_REMOTE_SERVICES %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
